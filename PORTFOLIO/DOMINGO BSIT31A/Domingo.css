@@ -1,0 +1,70 @@
+body {
+    background-color: skyblue;
+    padding: 20px;
+}
+
+.Links {
+    display: flex;
+    background-color: skyblue;
+    align-items: right;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    border: 3px solid skyblue;
+    padding: 20px;
+    z-index: 1000;
+}
+
+nav a:hover {
+    text-decoration: skyblue;
+    color: black;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 30px;
+    border-radius: 10%;
+    background-color: whitesmoke;
+}
+
+
+div {
+    text-align: left;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+section {
+    text-align: justify;
+    padding: 10px;
+    background-color: skyblue;
+}
+
+h1 {
+    background-color: skyblue;
+}
+
+nav b {
+    background-color: skyblue;
+    padding: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section h2:hover {
+     text-decoration: skyblue;
+    color: black;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 30px;
+    border-radius: 10%;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration:wavy;
+}

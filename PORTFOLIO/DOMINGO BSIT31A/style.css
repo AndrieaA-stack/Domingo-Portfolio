@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121824; 
+  color: #e2e8f0;            
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 850px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.header {
+  background-color: #1e293b;
+  border-bottom: 2px solid #334155;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #38bdf8; 
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0369a1;
+  transform: translateY(-2px);
+}
+
+
+main {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.hero {
+  padding: 35px 0 20px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #38bdf8;
+  border: 1px solid #334155;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+
+.profile-image-container {
+  margin-bottom: 20px;
+}
+
+.toggle-checkbox {
+  display: none; 
+}
+
+.img-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-img {
+  max-height: 240px;
+  width: auto;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.02);
+}
+
+/* Display main-img by default, hide alt-img */
+.main-img {
+  display: block;
+}
+
+.alt-img {
+  display: none;
+}
+
+/* Swap images when checkbox is clicked */
+.toggle-checkbox:checked + .img-wrapper .main-img {
+  display: none;
+}
+
+.toggle-checkbox:checked + .img-wrapper .alt-img {
+  display: block;
+}
+
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #f8fafc;
+  margin-bottom: 5px;
+}
+
+.subtitle h2 {
+  font-size: 1.1rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+
+.section {
+  margin-top: 20px;
+}
+
+.link-section {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.link-section h2 {
+  font-size: 1.3rem;
+  color: #f8fafc;
+  margin-bottom: 5px;
+}
+
+.link-section p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #334155;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+  padding-left: 24px; 
+}
+
+
+.footer {
+  background-color: #1e293b;
+  border-top: 1px solid #334155;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
