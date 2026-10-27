@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: domingo-portfolio
+    env: static
+    buildCommand: ""
+    staticPublishPath: ./PORTFOLIO/DOMINGO BSIT31A
