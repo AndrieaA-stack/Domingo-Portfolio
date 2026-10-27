@@ -1,1 +1,232 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"> </script>
+    
+</head>
+       <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card1{
+            background-color: bisque;
+            margin: auto;
+            padding: 100px;
+            border-radius: 15px;
+            border: solid 2px black;
+        }
+
+        .course2{
+            background-color: bisque;
+            margin: auto;
+            padding: 100px;
+            border-radius: 15px;
+            border: solid 2px black;
+            text-align: center;
+        }
+
+        button{
+            background-color: bisque;
+            margin: auto;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        th,td {
+            padding: 30px;
+        }
+        table{
+            width: 80%;
+        }
+       </style>
+
+<body>
+
+    <div class="card1">
+    <h1 id="intro"> MY STUDENT PROFILE </h1>
+    <h2 class="p1"> WELCOME SA KAKAIBANG GAWA KO </h2>
+    </div>
+    
+    <div id="card2">
+    <p> STUDENT INFORMATION </p>
+    <p> Name:  <b> Domingo Andrie C. </b> </p>
+    <p> Course:  <b id="Course"> SELECT ANY COURSE </b> </p>
+    <p> Year Level: <b> 3rd </b> </p>
+    </div>
+
+    <div class="card">
+    <button id="btnf"> CLICK MO AKO </button>
+    <button id="hide"> HIDE </button>
+    <button id="show"> SHOW  </button>
+    <br> <br>
+    </div>
+
+    <p id="message"> OUTPUT: </p>
+
+    <hr color="black">
+
+    <div class="course2">
+
+    <h1> CHOOSE YOUR COURSE </h1>
+    
+    <select id="course2">
+        <option value="SELECT"> SELECT ANY COURSE </option>
+        <option value="BSIT"> BSIT </option>
+        <option value="BSCS"> BSCS </option>
+        <option value="BSTM"> BSTM </option>
+    </select>
+    </div>
+
+    <div class="message2">
+    <p id="message2"> no course selected </p>
+    <hr color="black">
+    </div>
+
+        <br>
+        <br>
+    <h2>  Student List </h2>
+
+    <h4> REGISTER STUDDENT </h4>
+
+    <div class="container">
+     <table border="2" id="table">
+            <tr> 
+                <th>NO</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>BSIT</td>
+                <td>3rd YEAR</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>BSCS</td>
+                <td>3rd YEAR </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Pedro</td>
+                <td>BECED</td>
+                <td>1st YEAR</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Janfrey</td>
+                <td>BSHM</td>
+                <td>3rd YEAR</td>
+            </tr>
+        </table>
+        </div>
+
+        <button id="h"> HIDE </button>
+    <button id="s"> SHOW  </button>
+
+    
+        <button id="hs"> ODD </button>
+    <button id="ss"> EVEN  </button>
+   
+    <script src="script.js"> </script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+JAVASCRIPT
+
+$("#btnf").click(function(){
+
+       $(this).css("background-color", "white")
+       $(this).css("color", "black")
+       $("#intro").text("WELCOME PO")
+       $("#message").text("YOU CLICK THE BUTTON ONCE")
+
+   })
+
+   $("#btnf").dblclick(function(){
+       $("#message").text("YOU DOUBLE CLICK THE BUTTON ONCE")
+         $(this).css("background", "beige")
+    })
+
+    $("#btnf").mouseenter(function(){
+        $("#message").text("WAG MO PINDUTINN")
+   })
+
+   $("#btnf").mouseleave(function(){
+        $("#message").text("OKAY NA WALA KANA HERE")
+
+   })
+
+    $("#hide").click(function(){
+        $("#card2").hide("slow")
+        $("#h").css("background", "beige")
+
+   })
+
+   $("#show").click(function(){
+        $("#card2").show("3000")
+
+   })
+
+   $("#course2").change(function(){
+        $("#Course").text($(this).val())
+           $("#message2").text($(this).val())
+   })
+
+
+
+       $("#h").click(function(){
+        $("#table").hide("slow")
+        $(this).css("background", "bisque")
+        $(this).css("color", "white")
+
+   })
+
+        $("#s").click(function(){
+        $("#table").show("slow")
+        $(this).css("background", "bisque")
+        $(this).css("color", "white")
+
+   })
+
+   $("#hs").click(function(){
+    $("tr:odd").css("background", "brown")
+    $("tr:odd").css("color", "white")
+    $("tr:even").css("background", "")
+   })
+
+    $("#ss").click(function(){
+    $("tr:even").css("background", "brown")
+       $("tr:odd").css("color", "black")
+     $("tr:odd").css("background", "")
+   })
