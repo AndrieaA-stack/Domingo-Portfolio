@@ -3,53 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome | Andrei</title>
+  <meta name="description" content="Online Portfolio for BS Information Technology - Andrei Domingo BSIT 31-A">
+  <title>My Portfolio | Andrei Domingo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Top Navigation Header -->
   <header class="header">
     <div class="container nav-container">
-      <a href="INDEX.html" class="logo">ANDRIE DOMINGO </a>
-      <nav class="nav-links">
-        <a href="Activities.html" class="nav-btn">Andrei Domingo School Activities!</a>
+      <a href="#home" class="logo">My Portfolio</a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="Activities.html" class="nav-btn">Activities</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Hero Section -->
-    <section class="hero">
-      <span class="badge">SIMPLE STUDENT LANG</span>
-      
-      <!-- Clickable Profile Character Image (HTML + CSS Toggle) -->
-      <div class="profile-image-container">
-        <input type="checkbox" id="img-toggle" class="toggle-checkbox">
-        <label for="img-toggle" class="img-wrapper" title="Click to change image!">
-          <img src="Pogi.png" alt="" class="profile-img main-img">
-          <img src="Superpogi.png" alt="" class="profile-img alt-img">
-        </label>
+  <!-- Hero Section -->
+  <section class="hero-wrapper" id="home">
+    <!-- Ambient Bokeh / Floating Bubbles -->
+    <div class="hero-particles">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+    </div>
+
+    <div class="container hero-content">
+      <!-- Left: Text and Buttons -->
+      <div class="hero-text">
+        <span class="badge">BSIT 31-A &bull; Student</span>
+        <h1 class="hero-title">Hello Everyone</h1>
+        <p class="hero-desc">Online Portfolio for BS Information Technology</p>
+        <div class="hero-typing">
+          <span id="typing-text">Future IT Professional</span>
+          <span class="typing-cursor">|</span>
+        </div>
+        
+        <div class="btn-group">
+          <a href="#projects" class="btn-primary">View My Projects</a>
+          <a href="#about" class="btn-secondary">About Me</a>
+        </div>
       </div>
 
-      <h3>BSIT 31-A</h3>
-      <div class="subtitle">
-        <h2>WELCOME ON MY ONLINE PORTFOLIO IN WEB</h2>
+      <!-- Right: Interactive Profile Image Toggle -->
+      <div class="hero-avatar-side">
+        <div class="avatar-label">Click the Profile Picture</div>
+        <div class="profile-circle-container">
+          <input type="checkbox" id="img-toggle" class="toggle-checkbox">
+          <label for="img-toggle" class="circle-img-wrapper" title="Click to swap picture!">
+            <img src="Pogi.png" alt="Andrei Domingo" class="circle-profile-img main-img">
+            <img src="Superpogi.png" alt="Andrei Domingo Alternate" class="circle-profile-img alt-img">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smooth Bottom Wave SVG -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,20 1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Main Body Content -->
+  <main>
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Information</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know more about my background, studies, and interests.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>👤 Student Profile</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-label">Full Name</span>
+                <span class="info-value">Andrie C. Domingo</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Degree</span>
+                <span class="info-value">BS Information Technology</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Year & Section</span>
+                <span class="info-value">3rd Year &bull; BSIT 31-A</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Focus Area</span>
+                <span class="info-value">Web Development & Systems</span>
+              </li>
+            </ul>
+
+            <div class="quote-box">
+              &ldquo;Mata sa langit, paa sa lupa.&rdquo;
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>🎯 Hobbies & Interests</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-label">Sports</span>
+                <span class="info-value">Basketball Lover 🏀</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Gaming</span>
+                <span class="info-value">Mobile Legends Enthusiast 🎮</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Tech Passion</span>
+                <span class="info-value">Frontend Web Design & UI</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="Profile.html" class="project-btn" style="flex: 1; text-align: center; justify-content: center;">
+                Open Dedicated Profile Page &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Navigation Link Section -->
-    <section class="section link-section">
-      <h2>LAB ACTIVITIES</h2>
-      <p>ETO LANG PU LAB ACTIVITIES KO IH</p>
-      <a href="Activities.html" class="btn">View All Activities</a>
+    <!-- Projects Section -->
+    <section class="section" id="projects" style="background: rgba(255,255,255,0.015);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Works</span>
+          <h2 class="section-title">My Projects & Lab Activities</h2>
+          <p class="section-subtitle">A collection of web development activities and projects created for BSIT 31-A.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Activity 1</span>
+              <h3 class="project-title">Bahay / Sports Page</h3>
+              <p class="project-desc">Interactive website featuring favorite sports, imagery, and CSS styling layouts.</p>
+            </div>
+            <a href="Bahay.html" class="project-btn">
+              <span>Launch Project</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Activity 2</span>
+              <h3 class="project-title">Domingo Bio Page</h3>
+              <p class="project-desc">Personal profile page showcasing 3D character avatars and structured content.</p>
+            </div>
+            <a href="Domingo.html" class="project-btn">
+              <span>Launch Project</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Activity 3</span>
+              <h3 class="project-title">Personal Website Home</h3>
+              <p class="project-desc">Complete multi-section layout with sidebars, headers, and navigation menus.</p>
+            </div>
+            <a href="Home.html" class="project-btn">
+              <span>Launch Project</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Activity 4</span>
+              <h3 class="project-title">Student Details Portal</h3>
+              <p class="project-desc">Data tables, student records, and interactive DOM manipulation elements.</p>
+            </div>
+            <a href="Student.html" class="project-btn">
+              <span>Launch Project</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Activity 5</span>
+              <h3 class="project-title">Registration & Grade Table</h3>
+              <p class="project-desc">Interactive student registration forms and computed grade presentation tables.</p>
+            </div>
+            <a href="Form.html" class="project-btn">
+              <span>Launch Project</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge">Activity 6</span>
+              <h3 class="project-title">Student Info API</h3>
+              <p class="project-desc">Asynchronous AJAX XMLHttpRequest fetching real-time JSON placeholder data.</p>
+            </div>
+            <a href="indexx.html" class="project-btn">
+              <span>Launch Project</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="Activities.html" class="btn-primary" style="padding: 14px 32px; font-size: 1rem;">
+            View Full Activities Directory &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Core technical tools practiced throughout the BSIT curriculum.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>💻 Technical Skills</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-label">HTML5 & Semantic Markup</span>
+                <span class="info-value">Advanced</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">CSS3 & Responsive Design</span>
+                <span class="info-value">Intermediate</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">JavaScript & DOM Scripting</span>
+                <span class="info-value">Intermediate</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">AJAX & Asynchronous APIs</span>
+                <span class="info-value">Practicing</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>⚡ Workflow & Tools</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-label">Version Control</span>
+                <span class="info-value">Git & GitHub</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Code Editor</span>
+                <span class="info-value">VS Code</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Web Hosting</span>
+                <span class="info-value">GitHub Pages / Vercel</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-banner">
+          <h2>Let's Connect!</h2>
+          <p>Interested in collaborating or checking out more of my school projects?</p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="mailto:Domingoandrei423@gmail.com" class="btn-primary">Email Me</a>
+            <a href="https://github.com/AndrieaA-stack" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; No Copy Right.</p>
+    <div class="container footer-content">
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+      </ul>
+      <p>&copy; Andrei Domingo &bull; BSIT 31-A &bull; Online Portfolio</p>
     </div>
   </footer>
 
+  <!-- Dynamic Typing & Active Navigation Script -->
+  <script>
+    // Typing Animation
+    const words = ["Future IT Professional", "Web Developer", "BSIT 31-A Student", "Tech Enthusiast"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingElement = document.getElementById("typing-text");
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typingElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typingElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let speed = isDeleting ? 45 : 90;
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        speed = 1800; // Pause at end of word
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = 400; // Pause before new word
+      }
+
+      setTimeout(typeEffect, speed);
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+
+    // Active Navigation Highlight on Scroll
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll("section[id]");
+
+    window.addEventListener("scroll", () => {
+      let currentSectionId = "";
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          currentSectionId = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSectionId}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>

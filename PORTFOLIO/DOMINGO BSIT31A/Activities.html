@@ -1,47 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Activities | Andrei</title>
+  <title>School Activities | Andrei Domingo</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- Top Navigation Header -->
   <header class="header">
     <div class="container nav-container">
-      <a href="INDEX.html" class="logo">ANDREI</a>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-btn">BACK TO MAIN PAGE PO</a>
+      <a href="index.html#home" class="logo">My Portfolio</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="Activities.html" class="nav-link active">Activities</a></li>
+          <li><a href="index.html#contact" class="nav-btn">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <span class="badge">SCHOOL WORK</span>
-      <h1>Select an Activity</h1>
-      <p>Choose any of the activities below to view its contents:</p>
+  <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <section class="section-header" style="text-align: left; margin-bottom: 30px;">
+      <span class="section-tag">Academic Coursework</span>
+      <h1 class="section-title">BSIT 31-A School Activities</h1>
+      <p class="section-subtitle" style="margin-left: 0;">Select an activity below to view the interactive live demo and
+        source implementation.</p>
     </section>
 
-   
-    <section class="section link-section">
-      <div style="display: flex; flex-direction: column; gap: 15px;">
-        <a href="Bahay.html" class="btn">Activity 1: Bahay / Sports Page </a>
-        <a href="Domingo.html" class="btn">Activity 2: Domingo Page</a>
-        <a href="Home.html" class="btn">Activity 3: Personal Website Home </a>
-        <a href="Student.html" class="btn">Activity 3: Student Details</a>
-        <a href="indexx.html" class="btn">Activity 4: Indexx Page</a>
-        
+    <div class="projects-grid">
+      <div class="project-card">
+        <div>
+          <span class="project-badge"></span>
+          <h3 class="project-title">Bahay / Sports Page</h3>
+          <p class="project-desc">Exploration of HTML elements, multimedia integration, and layout fundamentals.</p>
+        </div>
+        <a href="Bahay.html" class="project-btn">
+          <span></span>
+          <span>&rarr;</span>
+        </a>
       </div>
-    </section>
+
+      <div class="project-card">
+        <div>
+          <span class="project-badge"></span>
+          <h3 class="project-title">Domingo Bio Page</h3>
+          <p class="project-desc">Student profile presentation incorporating 3D models and responsive content.</p>
+        </div>
+        <a href="Domingo.html" class="project-btn">
+          <span></span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <span class="project-badge"></span>
+          <h3 class="project-title">Personal Website Home</h3>
+          <p class="project-desc">Complete multi-section portal with responsive layouts, headers, and footers.</p>
+        </div>
+        <a href="Home.html" class="project-btn">
+          <span></span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <span class="project-badge"></span>
+          <h3 class="project-title">Student Details Portal</h3>
+          <p class="project-desc">Structured student tables, record management, and jQuery interaction script.</p>
+        </div>
+        <a href="Student.html" class="project-btn">
+          <span></span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <span class="project-badge"></span>
+          <h3 class="project-title">Registration & Grade Table</h3>
+          <p class="project-desc">HTML form controls, validation layout, and tabular evaluation of grades.</p>
+        </div>
+        <a href="Form.html" class="project-btn">
+          <span></span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <span class="project-badge"></span>
+          <h3 class="project-title">Student Info API</h3>
+          <p class="project-desc">Asynchronous AJAX XMLHttpRequest fetching real-time JSON placeholder data.</p>
+        </div>
+        <a href="indexx.html" class="project-btn">
+          <span></span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-top: 35px;">
+      <a href="index.html" class="btn-secondary">&larr; Back to Main Portfolio</a>
+    </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; No Copy Right.</p>
+    <div class="container footer-content">
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+      </ul>
+      <p>&copy; Andrei Domingo &bull; BSIT 31-A &bull; Online Portfolio</p>
     </div>
   </footer>
 
 </body>
+
 </html>
